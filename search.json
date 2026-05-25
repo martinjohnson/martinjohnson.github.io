@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "AI Won’t Replace Pharmacometrics. Here’s What It Will Do.\n\n\nAI is not arriving to displace a modelling discipline. It is arriving to extend an information strategy that was always hungry for more.\n\n\n\n\n\nMay 25, 2026\n\n\nMartin Johnson\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Martin Johnson",
+    "section": "",
+    "text": "Pharmacometrician and digital innovation lead with 20+ years across drug development and quantitative pharmacology. I write about AI, MIDD, and the future of pharmacometrics."
+  },
+  {
+    "objectID": "posts/ai-midd/index.html",
+    "href": "posts/ai-midd/index.html",
+    "title": "AI Won’t Replace Pharmacometrics. Here’s What It Will Do.",
+    "section": "",
+    "text": "The question I hear most often in pharmacometrics circles right now is some version of this: Will AI make pharmacometricians redundant?\nIt is a question worth reframing. And perhaps the reason it keeps surfacing is that there is a genuine opportunity to revisit what MIDD fundamentally represents — not just as a set of modelling techniques, but as something broader."
+  },
+  {
+    "objectID": "posts/ai-midd/index.html#thinking-of-midd-as-an-information-strategy",
+    "href": "posts/ai-midd/index.html#thinking-of-midd-as-an-information-strategy",
+    "title": "AI Won’t Replace Pharmacometrics. Here’s What It Will Do.",
+    "section": "Thinking of MIDD as an information strategy",
+    "text": "Thinking of MIDD as an information strategy\nOne useful way to think about Model-Informed Drug Development is not as a collection of modelling methods, but as an information strategy. MIDD integrates heterogeneous knowledge — in vitro data, animal pharmacology, early clinical results, biomarker signals, real-world evidence — into a coherent quantitative framework. While characterising existing data is often the starting point, the goal is ultimately predictive: to simulate outcomes, anticipate risks, and support decisions before all the empirical evidence is in hand.\nThat defining word is informed. MIDD does not replace clinical judgement. It sharpens it.\nUnderstood in those terms, the relationship with AI becomes clearer. AI is not arriving to displace a modelling discipline. It is arriving to extend an information strategy that was always hungry for more — more data, better signal extraction, faster evidence synthesis abd quicker outcomes. The question is not whether AI belongs in pharmacometrics. It is where it belongs, and what it needs from us to work."
+  },
+  {
+    "objectID": "posts/ai-midd/index.html#where-ai-is-extending-what-midd-can-do",
+    "href": "posts/ai-midd/index.html#where-ai-is-extending-what-midd-can-do",
+    "title": "AI Won’t Replace Pharmacometrics. Here’s What It Will Do.",
+    "section": "Where AI is extending what MIDD can do",
+    "text": "Where AI is extending what MIDD can do\nSome of the key areas where this is already playing out:\nCovariate identification. Stepwise covariate modelling in population PK/PD is well-established, but conventional approaches can be slow and may miss non-linear relationships between covariates and model parameters. Machine learning methods — gradient boosting, random forests — screen covariate space more efficiently and can identify candidate relationships that sequential stepwise approaches may overlook. Importantly, their outputs feed back into conventional pharmacometric workflows. They inform the pharmacometrician. They do not replace the pharmacometrician.\nBiomarker discovery. AI applied to omics, imaging, and digital biomarker data is identifying novel signals of disease activity and drug response that conventional analysis would miss. Whether those signals reliably translate into exposure-response and disease progression models is still an open question in most therapeutic areas — the bridge between discovery and regulatory-facing modelling remains a genuine challenge.\nEvidence synthesis for model-based meta-analysis. Natural language processing is beginning to demonstrate practical value for extracting pharmacological information from literature at scale — a meaningful benefit for MBMA, where the breadth and quality of the evidence base directly shapes model conclusions. That said, current NLP accuracy for quantitative data extraction — numerical PK parameters, dose-response values — still requires substantial human review before results are fit for use in a regulatory context. The technology reduces the burden; it does not yet remove the need for expert oversight.\nQSP model development. QSP models are ambitious by design — representing biological systems across multiple scales, from molecular targets to tissue responses to clinical outcomes. That scope creates a well-documented practical challenge: these models are high-dimensional, often with more parameters than can be reliably estimated from available data, and multiple parameter combinations can produce equally plausible fits to the same observations — a problem known as parameter non-identifiability. Machine learning is beginning to address this in two concrete ways. First, ML-accelerated sensitivity analysis and parameter estimation can navigate high-dimensional parameter spaces more efficiently than conventional global optimisation methods, identifying which parameters most influence model predictions and which are poorly constrained by data. Second, ML supports virtual population generation — sampling plausible parameter sets to represent patient variability — which is central to how QSP models inform drug development decisions. Neither replaces the mechanistic reasoning that defines QSP; both make computationally demanding parts of the workflow more tractable.\nHybrid modelling. Neural ordinary differential equations embed machine learning within a differential equation structure, allowing the model to capture dynamics that a conventional mechanistic model might miss. The ODE framework provides mechanistic grounding — but it is worth being precise: the learned components within a neural ODE remain a black box, and regulatory defensibility of hybrid models has not yet been demonstrated in practice. This is an area of genuine scientific interest, but one where the field is still working out what “fit for regulatory purpose” actually means. The trajectory is promising; the destination is not yet reached.\nIn each case the pattern is the same: AI handles complexity and scale where conventional methods are constrained. MIDD provides the interpretive and regulatory framework that gives the outputs meaning and defensibility. Neither is complete without the other."
+  },
+  {
+    "objectID": "posts/ai-midd/index.html#the-regulatory-framework-is-further-along-than-most-realise",
+    "href": "posts/ai-midd/index.html#the-regulatory-framework-is-further-along-than-most-realise",
+    "title": "AI Won’t Replace Pharmacometrics. Here’s What It Will Do.",
+    "section": "The regulatory framework is further along than most realise",
+    "text": "The regulatory framework is further along than most realise\nThere is an important point that often gets lost in discussions about AI and regulatory acceptance: a substantial evaluative framework already exists.\nIn September 2024, EMA’s Committee for Human Medicinal Products adopted a finalised Reflection Paper on AI across the medicinal product lifecycle, requiring that AI tools be transparent, accessible, validated, and monitored throughout development and post-authorisation. In 2026, FDA and EMA jointly published ten principles for responsible AI use in drug development — covering data governance, proportional validation, context of use, human oversight, and transparency.\nThe alignment between these requirements and the principles that have governed model credibility in M&S for decades is striking. Whether that reflects direct influence or simply the convergence of rigorous quantitative science on the same standards regardless of method, the practical implication is the same — and it matters for how pharmacometric teams approach AI adoption.\n\nData quality — the importance of data quality in shaping model conclusions is not new to pharmacometrics. Training datasets in drug development are often small and historically undiverse, and the EMA Reflection Paper explicitly requires assessment for integrity, representativeness, and bias — challenges that will be familiar, even if the specific manifestation in AI training data differs from sparse clinical trial sampling.\nAssumptions — in AI, assumptions are embedded in architectural choices and training data rather than written as equations. The expectation of documentation and justification is the same as regulatory agencies have long required of mechanistic models.\nValidation — fitness-for-purpose, context of use, external validation against independent data. A model that performs in training but fails on new data does not meet the standard. That lesson predates AI in drug development.\nTransparency — outputs that cannot be scientifically scrutinised cannot be defended when a reviewer asks how a model arrived at a dosing recommendation. The FDA-EMA joint principles are clear: AI development should promote transparency, reliability, generalisability, and robustness.\n\nThis does not mean AI adoption in pharmacometrics is straightforward. It means that teams with a strong M&S foundation are better positioned to navigate it than they might assume."
+  },
+  {
+    "objectID": "posts/ai-midd/index.html#the-principle-that-holds-it-together",
+    "href": "posts/ai-midd/index.html#the-principle-that-holds-it-together",
+    "title": "AI Won’t Replace Pharmacometrics. Here’s What It Will Do.",
+    "section": "The principle that holds it together",
+    "text": "The principle that holds it together\nAI informs. Humans decide.\nThat accountability structure — qualified scientific judgement at every critical step — is not a concession to regulatory conservatism. It is what makes AI usable in a drug development context at all. And it is entirely consistent with how MIDD has always worked. We have never asked a model to make a decision. We have asked it to make a decision better-informed.\nAI does not change that. It raises the quality of the information the model can work with, and raises the speed at which that information can be assembled.\nFor pharmacometricians, that is not a threat. This is the one that makes the job interesting!!\n\nThis is the first in a series on AI and MIDD. Next: why the regulatory framework for AI in drug development is one pharmacometricians are better positioned to navigate than they might think."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am a pharmacometrician and clinical pharmacology leader with over 20 years of experience across drug development — from early discovery through to regulatory submission and post-approval activities.\nMy work sits at the intersection of quantitative pharmacology, data science, and digital innovation. I have led pharmacometric teams at AstraZeneca and MSD, and have published on the application of machine learning in clinical pharmacology.\nThis blog is where I think out loud about AI and automation in Model-Informed Drug Development — what is working, what is not, and where the field is heading."
+  }
+]
